@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+       backgroundImage: {
+        'parallaxHome': 'url("./public/assets/images/parallaxHome.webp")'
+      }
+    },
   },
   plugins: [],
 }
