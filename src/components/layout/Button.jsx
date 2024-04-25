@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function Button({to, text, bgColor, textColor, addClass}) {
    
   return (
-    <Link to={to} className={`text-xl bg-${bgColor}-800 text-${textColor}-200 flex justify-center items-center generalBtn ${addClass}`}>{text}</Link>
+    <Link to={to} className={`text-lg lg:text-xl bg-${bgColor}-800 text-${textColor}-200 flex justify-center items-center generalBtn ${addClass}`}>{text}</Link>
   )
 }
 
