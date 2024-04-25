@@ -10,6 +10,9 @@ export default {
        backgroundImage: {
         'aboutHeaderBgImg': 'url("./src/assets/images/aboutHeader3.webp)',
        },
+       position: {
+        'unset': 'unset',
+       },
     },
   },
   plugins: [],

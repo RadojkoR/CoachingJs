@@ -11,8 +11,8 @@ function Nav() {
     }
 
   return (
-    <nav className="sticky top-0 w-full mx-auto p-2 bg-slate-200 mainNav">
-      <div className="flex items-center justify-between space-x-20 my-6">
+    <nav className="sticky top-0 w-full mx-auto p-2 bg-slate-200 mainNav z-50">
+      <div className="flex items-center justify-between space-x-20 my-6 z-50">
         <div className="z-30 ml-10 font-bold md:text-lg text-slate-700">
           <NavLink to={"/"} className="navLogo">BUSINESS LOGO PLACEMENT</NavLink>
         </div>
@@ -39,7 +39,7 @@ function Nav() {
           </button>
       </div>
       {/* Mobile menu */}
-      <div id="hamMenu" className={`absolute md:hidden p-6 rounded-lg bg-slate-900 right-0 top-16 w-8/12 sm:w-6/12 hamburgerMenu ${isMenuOpen ? "flex" : "hidden"}`}>
+      <div id="hamMenu" className={`absolute md:hidden p-6 rounded-lg bg-slate-900 right-0 top-16 w-8/12 sm:w-6/12 hamburgerMenu z-50 ${isMenuOpen ? "flex" : "hidden"}`}>
           <ul className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-gray-300 rounded-sm z-50">
             <li className="w-full">
             <NavLink to={"/"} className="py-2.5 block w-full">Home</NavLink>
