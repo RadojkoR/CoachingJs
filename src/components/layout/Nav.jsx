@@ -45,8 +45,8 @@ function Nav() {
             <NavLink to={"/"} className="p-2.5">Home</NavLink>
             </li>
             {menuItems.map((item, index) =>(
-              <li key={index}>
-                <NavLink to={`/${item.toLowerCase()}`} className="p-2.5">{item}</NavLink>
+              <li key={index} className="w-full">
+                <NavLink to={`/${item.toLowerCase()}`} className="py-2.5 block w-full">{item}</NavLink>
               </li>
             ))}
           </ul>
