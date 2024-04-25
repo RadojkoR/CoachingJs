@@ -1,5 +1,13 @@
 @use "./variables.scss";
 
+.active {
+    color:#6ba8c5;
+}
+
+.navLogo {
+    color: #686868!important;
+}
+
 .hamburger {
     cursor: pointer;
     width: 24px;
