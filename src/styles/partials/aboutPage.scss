@@ -1,0 +1,15 @@
+@use './variables.scss';
+
+
+.headerAbout {
+    width: 100%;
+    height: 600px;
+    background-image: url("../../assets/images/aboutHeader3.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.certificate {
+
+}

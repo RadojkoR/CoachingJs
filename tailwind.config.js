@@ -7,7 +7,9 @@ export default {
   
   theme: {
     extend: {
-       
+       backgroundImage: {
+        'aboutHeaderBgImg': 'url("./src/assets/images/aboutHeader3.webp)',
+       },
     },
   },
   plugins: [],
