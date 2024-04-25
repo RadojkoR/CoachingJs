@@ -39,7 +39,7 @@ function Nav() {
           </button>
       </div>
       {/* Mobile menu */}
-      <div id="hamMenu" className={`absolute md:hidden p-6 rounded-lg bg-slate-900 right-0 top-16 w-2/5 hamburgerMenu ${isMenuOpen ? "flex" : "hidden"}`}>
+      <div id="hamMenu" className={`absolute md:hidden p-6 rounded-lg bg-slate-900 right-0 top-16 w-8/12 sm:w-6/12 hamburgerMenu ${isMenuOpen ? "flex" : "hidden"}`}>
           <ul className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-gray-300 rounded-sm z-50">
             <li>
             <NavLink to={"/"} className="p-2.5">Home</NavLink>
