@@ -1,0 +1,12 @@
+@use './variables.scss';
+
+.aboutMeHome {
+    background: variables.$secondary;
+}
+
+.parallaxHomeContainer {
+    background-image: url("../../assets/images/parallaxHome.webp");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
