@@ -16,7 +16,7 @@ function Banner() {
         +1 234 567 8900
       </a>
       <span className="mr-1 ex:mr-2 md:mr-5 text-xs md:text-lg">|</span>
-      <a className="mr-5 text-xs text-xl" href="mailto:test@test.com">
+      <a className="mr-5 text-xs md:text-xl" href="mailto:test@test.com">
         test@test.com
       </a>
       {/* <button className="bg-slate-700 text-gray-200 text-xl py-3 px-10">
