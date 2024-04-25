@@ -1,17 +1,14 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 
 function Nav() {
     const menuItems = ["About", "Services", "Testimonials", "Contact"];
-    const hamBtn = document.getElementById('menuBtn');
-    const hamMenu = document.getElementById('hamMenu');
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const handleHamBtn = () => {
-      hamBtn.classList.toggle("open")
-      hamMenu.classList.toggle("flex");
-      hamMenu.classList.toggle("hidden")
+      setIsMenuOpen(!isMenuOpen);
     }
-
 
   return (
     <nav className="sticky top-0 w-full mx-auto p-2 bg-slate-200 mainNav">
@@ -32,7 +29,7 @@ function Nav() {
         {/* Hamburger button */}
         <button 
           id="menuBtn" 
-          className="block hamburger  md:hidden focus:outline-none" 
+          className={`block hamburger md:hidden ${isMenuOpen ? "open" : ""}`}
           type="button"
           onClick={handleHamBtn}
           >
@@ -42,7 +39,7 @@ function Nav() {
           </button>
       </div>
       {/* Mobile menu */}
-      <div id="hamMenu" className="absolute hidden md:hidden p-6 rounded-lg bg-slate-900 right-0 top-16 w-2/5 hamburgerMenu">
+      <div id="hamMenu" className={`absolute md:hidden p-6 rounded-lg bg-slate-900 right-0 top-16 w-2/5 hamburgerMenu ${isMenuOpen ? "flex" : "hidden"}`}>
           <ul className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-gray-300 rounded-sm z-50">
             <li>
             <NavLink to={"/"} className="p-2.5">Home</NavLink>
