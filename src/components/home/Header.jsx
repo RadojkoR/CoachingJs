@@ -1,4 +1,4 @@
-import BgVideo from "../../assets/videos/pearTreeBlossom.mp4"
+import BgVideo from "../../assets/videos/pearTreeBlossom.mp4";
 function Header() {
   return (
     <header className="w-100 mainHeader">

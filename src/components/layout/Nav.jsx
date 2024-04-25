@@ -6,8 +6,8 @@ function Nav() {
   return (
     <nav className="sticky top-0 w-full mx-auto p-2 bg-slate-200 mainNav">
       <div className="flex items-center justify-between space-x-20 my-6">
-        <div className="z-30">
-          <NavLink to={"/"}>COACHING</NavLink>
+        <div className="z-30 ml-10">
+          <NavLink to={"/"}>BUSINESS LOGO PLACEMENT</NavLink>
           
         </div>
         <ul className="hidden items-center uppercase text-grayishBlue md:flex mr-5">

@@ -6,6 +6,7 @@ import Nav from './components/layout/Nav';
 import Home from './pages/Home';
 import About from './pages/About';
 import Banner from './components/layout/Banner';
+import ComingSoon from './pages/ComingSoon';
 
 function App() {
 
@@ -17,6 +18,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/about' element={<About />}></Route>
+          <Route path='/services' element={<ComingSoon />}></Route>
+          <Route path='/testimonials' element={<ComingSoon />}></Route>
+          <Route path='/contact' element={<ComingSoon />}></Route>
         </Routes>
       </div>
 
