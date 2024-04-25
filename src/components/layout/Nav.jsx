@@ -3,12 +3,21 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
     const menuItems = ["About", "Services", "Testimonials", "Contact"];
+    const hamBtn = document.getElementById('menuBtn');
+    const hamMenu = document.getElementById('hamMenu');
+
+    const handleHamBtn = () => {
+      hamBtn.classList.toggle("open")
+      hamMenu.classList.toggle("flex");
+      hamMenu.classList.toggle("hidden")
+    }
+
+
   return (
     <nav className="sticky top-0 w-full mx-auto p-2 bg-slate-200 mainNav">
       <div className="flex items-center justify-between space-x-20 my-6">
         <div className="z-30 ml-10">
           <NavLink to={"/"}>BUSINESS LOGO PLACEMENT</NavLink>
-          
         </div>
         <ul className="hidden items-center uppercase text-grayishBlue md:flex mr-5">
           <li className="mr-10">
@@ -20,7 +29,31 @@ function Nav() {
             </li>
           ))}
         </ul>
+        {/* Hamburger button */}
+        <button 
+          id="menuBtn" 
+          className="block hamburger  md:hidden focus:outline-none" 
+          type="button"
+          onClick={handleHamBtn}
+          >
+            <span className="hamburger-top bg-slate-800"></span>
+            <span className="hamburger-middle bg-slate-800"></span>
+            <span className="hamburger-bottom bg-slate-800"></span>
+          </button>
       </div>
+      {/* Mobile menu */}
+      <div id="hamMenu" className="absolute hidden md:hidden p-6 rounded-lg bg-slate-900 right-0 top-16 w-2/5 hamburgerMenu">
+          <ul className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-gray-300 rounded-sm z-50">
+            <li>
+            <NavLink to={"/"} className="p-2.5">Home</NavLink>
+            </li>
+            {menuItems.map((item, index) =>(
+              <li key={index}>
+                <NavLink to={`/${item.toLowerCase()}`} className="p-2.5">{item}</NavLink>
+              </li>
+            ))}
+          </ul>
+      </div> 
     </nav>
   )
 }

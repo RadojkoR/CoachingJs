@@ -1,0 +1,53 @@
+@use "./variables.scss";
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s ease;
+    position: relative;
+    right: 15px;
+
+    &-top,
+    &-middle,
+    &-bottom
+    {
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 3px;
+        top: 0;
+        left: 0;
+        transform: rotate(0);
+        transition: all 0.5s;
+    }
+    &-middle {
+        transform: translateY(7px);
+    }
+
+    &-bottom {
+        transform: translateY(14px);
+    }
+
+    .open {
+        transform: rotate(90deg);
+        transform: translateY(0);
+    }
+
+    .open &-top {
+        transform: rotate(45deg) translateY(6px) translateX(6px);
+    }
+
+    .open &-middle {
+        display: none;
+    }
+
+    .open &-bottom {
+        transform: rotate(-45deg) translateY(6px) translateX(-6px);
+    }
+}
+
+.hamburgerMenu {
+    z-index: 1000!important;
+}
+
