@@ -1,4 +1,5 @@
 import NoImg from "../../assets/images/no-image-icon-md.png";
+import Button from "../layout/Button";
 
 function AboutMeHome() {
   return (
@@ -6,7 +7,6 @@ function AboutMeHome() {
       <div className="container mx-auto">
         <div className="w-4/5 mx-auto flex flex-col md:flex-row py-28 gap-5">
           <article className="aboutMeHomeImgContainer flex justify-center items-center md:w-2/4 mx-auto">
-            {/* <BsFilePerson className="text-[25rem]" /> */}
             <img src={NoImg} alt="Coach Img" />
           </article>
           <article className="md:w-2/4 mx-auto">
@@ -21,7 +21,7 @@ function AboutMeHome() {
               in, atque sint minima consequatur iure!
             </p>
             <div className="text-center mt-16">
-              {/* <Button to="/about" text="Read More" colorBg="slate" textColor="gray" /> */}
+              <Button to="/about" text="Read More" bgColor="slate" textColor="gray" addClass="mx-auto"/>
             </div>
           </article>
         </div>

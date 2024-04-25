@@ -6,9 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-       backgroundImage: {
-        'parallaxHome': 'url("./public/assets/images/parallaxHome.webp")'
-      }
+       
     },
   },
   plugins: [],

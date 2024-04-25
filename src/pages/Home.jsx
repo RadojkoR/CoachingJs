@@ -1,4 +1,5 @@
 import AboutMeHome from "../components/home/AboutMeHome"
+import Header from "../components/home/Header"
 import ParallaxHome from "../components/home/ParallaxHome"
 import ServicesHome from "../components/home/ServicesHome"
 
@@ -7,10 +8,10 @@ import ServicesHome from "../components/home/ServicesHome"
 function Home() {
   return (
     <>
-        <h1 className="text-center text-5xl">Home</h1>
-        <AboutMeHome />
-        <ServicesHome />
-        <ParallaxHome />
+      <Header />
+      <AboutMeHome />
+      <ServicesHome />
+      <ParallaxHome />
     </>
   )
 }
