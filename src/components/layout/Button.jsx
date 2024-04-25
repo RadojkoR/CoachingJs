@@ -10,11 +10,11 @@ function Button({to, text, bgColor, textColor, addClass}) {
 }
 
 Button.propTypes = {
-  to: PropTypes.string,
-  text: PropTypes.string,
-  bgColor: PropTypes.string,
-  textColor: PropTypes.string,
-  addClass: PropTypes.string
+  to: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  bgColor: PropTypes.string.isRequired,
+  textColor: PropTypes.string.isRequired,
+  addClass: PropTypes.string.isRequired
 };
 
 export default Button
